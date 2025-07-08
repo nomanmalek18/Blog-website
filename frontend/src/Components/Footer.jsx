@@ -33,11 +33,11 @@ const Footer = () => {
         {/* social media links */}
         <div className='mb-6 md:mb-0'>
             <h3 className='text-xl font-semibold'>Follow Us</h3>
-            <div className='flex space-x-4 mt-2 '>
-                <FaFacebook className='cursor-pointer'/>
-                <FaInstagram className='cursor-pointer'/>
-                <FaTwitterSquare className='cursor-pointer'/>
-                <FaPinterest className='cursor-pointer'/>
+            <div className='flex space-x-4 mt-2'>
+                <FaFacebook/>
+                <FaInstagram/>
+                <FaTwitterSquare/>
+                <FaPinterest/>
             </div>
         </div>
         {/* newsletter subscription */}

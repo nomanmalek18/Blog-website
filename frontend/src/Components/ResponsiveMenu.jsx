@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
 import { FaChevronRight } from 'react-icons/fa6';
@@ -40,7 +39,7 @@ const ResponsiveMenu = ({ openNav, setOpenNav, logoutHandler }) => {
             </div>
             <div className='pb-20'>
                 <h1>
-                    Made with ❤️ by
+                    Made with ❤️ by Rohit
                 </h1>
             </div>
         </div>

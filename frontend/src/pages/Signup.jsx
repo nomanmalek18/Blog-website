@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -138,7 +137,7 @@ const Signup = () => {
                                 />
                                 <button
                                     type="button"
-                                    className="absolute right-3 top-6 text-gray-500"
+                                    className="absolute right-3 top-9 text-gray-500"
                                     onClick={() => setShowPassword(!showPassword)}
                                 >
                                     {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
