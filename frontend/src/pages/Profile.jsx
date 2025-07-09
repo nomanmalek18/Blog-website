@@ -1,10 +1,10 @@
+import React, { useState } from "react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Card } from "@/components/ui/card";
-import React, { useState } from "react";
+import { Label } from "@/components/ui/label";
 import { useDispatch, useSelector } from "react-redux";
 import userLogo from "../assets/user.jpg";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { Label } from "@/components/ui/label";
 import {
   Dialog,
   DialogContent,

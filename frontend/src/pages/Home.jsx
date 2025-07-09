@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../Components/Hero'
-import RecentBlog from '@/Components/RecentBlog'
-import PopularAuthors from '@/Components/PopularAuthors'
+import RecentBlog from '../Components/RecentBlog'
+import PopularAuthors from '../Components/PopularAuthors'
 
 const Home = () => {
   return (

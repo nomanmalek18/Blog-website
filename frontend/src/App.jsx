@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './pages/Home'
 import Navbar from './Components/Navbar'
+import Home from './pages/Home'
 import Blog from './pages/Blogs'
 import About from './pages/About'
 import SearchList from './pages/SearchList'
@@ -15,7 +15,7 @@ import YourBlog from './pages/YourBlog'
 import Comments from './pages/Comment'
 import Signup from './pages/Singup'
 import Login from './pages/Login'
-import Footer from './Components/Footer'
+import Profile from './pages/Profile'
 
 const router = createBrowserRouter([
   {

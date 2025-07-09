@@ -1,5 +1,5 @@
 
-import Login from '@/pages/Login'
+import Login from '../pages/Login'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Navigate } from 'react-router-dom'
