@@ -1,7 +1,7 @@
-import Hero from '@/components/Hero'
 import React from 'react'
-import RecentBlog from '@/components/RecentBlog'
-import PopularAuthors from '@/components/PopularAuthors'
+import Hero from '../Components/Hero'
+import RecentBlog from '@/Components/RecentBlog'
+import PopularAuthors from '@/Components/PopularAuthors'
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <RecentBlog/>
       <PopularAuthors/>
     </div>
+
   )
 }
 

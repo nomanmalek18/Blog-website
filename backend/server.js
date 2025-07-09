@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:true}));
 app.use(cors({
-    origin: "https://mern-blog-ha28.onrender.com",
+    origin: "http://localhost:8000",
     credentials:true
 }))
 
@@ -31,9 +31,9 @@ const _dirname = path.resolve()
  app.use("/api/v1/comment", commentRoute)
 
  app.use(express.static(path.join(_dirname,"/frontend/dist")));
- app.get("*", (_, res)=>{
-    res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
- });
+//  app.get("*", (_, res)=>{
+//     res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
+//  });
 
 app.listen(PORT, ()=>{
     console.log(`Server listen at port ${PORT}`);

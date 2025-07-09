@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -32,7 +33,7 @@ const Signup = () => {
         console.log(user)
 
         try {
-            const response = await axios.post(`https://mern-blog-ha28.onrender.com/api/v1/user/register`, user, {
+            const response = await axios.post(`http://localhost:8000/api/v1/user/register`, user, {
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -137,7 +138,7 @@ const Signup = () => {
                                 />
                                 <button
                                     type="button"
-                                    className="absolute right-3 top-9 text-gray-500"
+                                    className="absolute right-3 top-6 text-gray-500"
                                     onClick={() => setShowPassword(!showPassword)}
                                 >
                                     {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}

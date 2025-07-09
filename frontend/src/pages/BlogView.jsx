@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import {
     Breadcrumb,
@@ -36,7 +37,7 @@ const BlogView = () => {
     const likeOrDislikeHandler = async () => {
         try {
             const action = liked ? 'dislike' : 'like';
-            const res = await axios.get(`https://mern-blog-ha28.onrender.com/api/v1/blog/${selectedBlog?._id}/${action}`, { withCredentials: true })
+            const res = await axios.get(`https://onrender.com/api/v1/blog/${selectedBlog?._id}/${action}`, { withCredentials: true })
             if (res.data.success) {
                 const updatedLikes = liked ? blogLike - 1 : blogLike + 1;
                 setBlogLike(updatedLikes);
