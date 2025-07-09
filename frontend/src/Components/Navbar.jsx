@@ -103,7 +103,9 @@ const Navbar = () => {
             <NavLink to={"/about"} className={`cursor-pointer`}>
               <li>About</li>
             </NavLink>
-            {/* <NavLink to={'/write-blog'} className={`cursor-pointer`}><li>Write a Blog</li></NavLink> */}
+            {/* <NavLink to={'/write-blog'} className={`cursor-pointer`}>
+            <li>Write a Blog</li>
+            </NavLink> */}
           </ul>
           <div className="flex">
             <Button onClick={() => dispatch(toggleTheme())} className="">
