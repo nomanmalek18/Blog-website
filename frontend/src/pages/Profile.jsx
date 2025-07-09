@@ -70,7 +70,7 @@ const Profile = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `https://mern-blog-ha28.onrender.com/api/v1/user/profile/update`,
+        `https:/localhost:8000/api/v1/user/profile/update`,
         formData,
         {
           headers: {

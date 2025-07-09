@@ -30,7 +30,7 @@ const createBlogHandler = async () => {
         
         try {
             setLoading(true)
-            const res = await axios.post(`https://api/v1/blog/`, { title, category }, {
+            const res = await axios.post(`https:/localhost:8000/api/v1/blog/`, { title, category }, {
                 headers: {
                     "Content-Type": "application/json",
                 },
