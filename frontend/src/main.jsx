@@ -5,9 +5,9 @@ import App from "./App.jsx";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { Toaster } from "./Components/ui/sonner";
-import ThemeProvider from "./components/ThemeProvider";
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
+import ThemeProvider from "./Components/ThemeProvider";
 
 const persistor = persistStore(store)
 
