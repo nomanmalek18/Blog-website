@@ -1,4 +1,4 @@
-import BlogCard from '../components/BlogCard';
+import BlogCard from '@/Components/BlogCard';
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
@@ -30,7 +30,7 @@ const SearchList = () => {
                 <div className='grid grid-cols-3 gap-7 my-10'>
                     {
                         filteredBlogs.map((blog, index) => {
-                            return <BlogCard  blog={blog} />
+                            return <BlogCard blog={blog} />
                         })
                     }
 
