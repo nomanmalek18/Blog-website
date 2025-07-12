@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from 'sonner'
 import { Loader2 } from "lucide-react";
 import { Button } from "@/Components/ui/button";
+import { API_BASE } from "@/lib/apiServices";
 
 const CreateBlog = () => {
   const [loading, setLoading] = useState(false);
@@ -31,7 +32,7 @@ const createBlogHandler = async () => {
         
         try {
             setLoading(true)
-            const res = await axios.post(`https:/localhost:8000/api/v1/blog/`, { title, category }, {
+            const res = await axios.post(`${API_BASE}/api/v1/blog/`, { title, category }, {
                 headers: {
                     "Content-Type": "application/json",
                 },

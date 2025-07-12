@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { toast } from "sonner";
 import { setBlog } from "@/redux/blogSlice";
+import { API_BASE } from "@/lib/apiServices";
 
 const UpdateBlog = () => {
   const editor = useRef(null);
@@ -74,7 +75,7 @@ const UpdateBlog = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http:/localhost:8000/api/v1/blog/${id}`,
+        `${API_BASE}/api/v1/blog/${id}`,
         formData,
         {
           headers: {
@@ -100,7 +101,7 @@ const UpdateBlog = () => {
 
     try {
       const res = await axios.patch(
-        `https:/localhost:8000/api/v1/blog/${id}`,
+        `${API_BASE}/api/v1/blog/${id}`,
         {
           params: {
             action,
@@ -123,7 +124,7 @@ const UpdateBlog = () => {
   const deleteBlog = async () => {
     try {
       const res = await axios.delete(
-        `https:/localhost:8000/api/v1/blog/delete/${id}`,
+        `${API_BASE}/api/v1/blog/delete/${id}`,
         { withCredentials: true }
       );
       if (res.data.success) {

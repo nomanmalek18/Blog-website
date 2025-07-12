@@ -4,6 +4,7 @@ import LMS from "../assets/LMS.png"
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { setBlog } from '@/redux/blogSlice'
+import { API_BASE } from '@/lib/apiServices'
 // import BlogCardList from '@/components/BlogCardList'
 
 export const blogJson = [
@@ -68,7 +69,7 @@ const Blog = () => {
     useEffect(() => {
         const getAllPublsihedBlogs = async () => {
             try {
-                const res = await axios.get(`https:/localhost:8000/api/v1/blog/get-published-blogs`, { withCredentials: true })
+                const res = await axios.get(`${API_BASE}/api/v1/blog/get-published-blogs`, { withCredentials: true })
                 if (res.data.success) {
                     dispatch(setBlog(res.data.blogs))
                 }

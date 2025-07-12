@@ -15,6 +15,7 @@ import YourBlog from './pages/YourBlog'
 import Comments from './pages/Comment'
 import Signup from './pages/Singup'
 import Login from './pages/Login'
+import Footer from './Components/Footer'
 
 const router = createBrowserRouter([
   {

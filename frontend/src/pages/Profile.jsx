@@ -22,6 +22,7 @@ import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { setUser } from "@/redux/authSlice";
 import TotalProperty from "@/components/TotalProperty";
+import { API_BASE } from "@/lib/apiServices";
 
 const Profile = () => {
   const dispatch = useDispatch();
@@ -70,7 +71,7 @@ const Profile = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `https:/localhost:8000/api/v1/user/profile/update`,
+        `${API_BASE}/api/v1/user/profile/update`,
         formData,
         {
           headers: {
