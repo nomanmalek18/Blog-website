@@ -34,7 +34,11 @@ const _dirname = path.resolve()
 //  app.get("*", (_, res)=>{
 //     res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
 //  });
-
+app.get('/',
+    (req,res)=>{
+        res.status(200).json({message:"welcome to blog website"})
+    }
+)
 app.listen(PORT, ()=>{
     console.log(`Server listen at port ${PORT}`);
     connectDB()
