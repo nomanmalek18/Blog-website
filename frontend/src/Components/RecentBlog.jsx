@@ -8,6 +8,7 @@ import { Input } from './ui/input';
 import { useNavigate } from 'react-router-dom';
 import { setBlog } from '@/redux/blogSlice';
 import axios from 'axios';
+import { API_BASE } from '@/lib/apiServices';
 
 const tags = [
     {
@@ -42,7 +43,7 @@ const RecentBlog = () => {
     useEffect(() => {
         const getAllPublsihedBlogs = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/v1/blog/get-published-blogs`, { withCredentials: true })
+                const res = await axios.get(`${API_BASE}/api/v1/blog/get-published-blogs`, { withCredentials: true })
                 if (res.data.success) {
                     dispatch(setBlog(res.data.blogs))
                 }

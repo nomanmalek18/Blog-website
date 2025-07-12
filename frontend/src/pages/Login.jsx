@@ -10,6 +10,7 @@ import { toast } from "sonner";
 import { useDispatch } from "react-redux";
 import { setUser } from "@/redux/authSlice";
 import auth from "../assets/auth.jpg";
+import { API_BASE } from "@/lib/apiServices";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/v1/user/login`,
+        `${API_BASE}/api/v1/user/login`,
         input,
         {
           headers: {

@@ -1,0 +1,1 @@
+export const API_BASE="https://blog-website-67nw.onrender.com"
