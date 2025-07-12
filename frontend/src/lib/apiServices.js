@@ -1,1 +1,1 @@
-export const API_BASE="https://blog-website-67nw.onrender.com"
+export const API_BASE="http://localhost:8000"
