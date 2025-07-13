@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:true}));
 app.use(cors({
-    origin: "http://localhost:8000",
+    origin: "https://blog-website-main-nelk.onrender.com",
     credentials:true
 }))
 
