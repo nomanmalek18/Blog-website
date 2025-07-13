@@ -1,4 +1,4 @@
-import BlogCard from '@/components/BlogCard'
+import BlogCard from "../Components/BlogCard.jsx"
 import React, { useEffect } from 'react'
 import LMS from "../assets/LMS.png"
 import axios from 'axios'
